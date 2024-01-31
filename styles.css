@@ -1,0 +1,86 @@
+*{
+    padding:0;
+    margin:0;
+   font-family: "Poppins",sans-serif;
+}
+
+.container{
+   width:100vw;
+   height:100vh;
+   background: linear-gradient(135deg,blue,white);
+   padding:10px;
+   color:white;
+}
+
+.calculator{
+    width:100%;
+    margin-left:37%;
+    margin-top:10%;
+    max-width: 600px;
+}
+
+.calculator h1{
+    font-size: 60px;
+}
+.calculator .age{
+    color: yellow;
+}
+.inputBox{
+    margin:40px 0px;
+    display:flex;
+    align-items:center;
+    background: rgba(245, 245, 245, 0.3);
+    padding:30px;
+    border-radius: 10px;;
+}
+
+.inputBox input{
+    flex:1;
+    padding:14px 20px;
+    font-size:17px;
+    border-radius: 5px;
+    border:none;
+    outline:none;
+    margin-right:20px;
+    position:relative;
+}
+
+.inputBox button{
+    border:none;
+    outline:none;
+    border-radius:10px;
+    padding:14px 20px;
+    color:white;
+    font-weight: 700;
+    background-color: crimson;
+    cursor: pointer;
+}
+
+.inputBox input::-webkit-calendar-picker-indicator{
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:auto;
+  height:auto;
+  position: absolute;
+  background-position: calc(100% - 10px);
+  cursor:pointer;
+}
+
+#result{
+    font-size: 25px;
+}
+
+#result .year{
+    font-size: 30px;
+    color:red;
+}
+#result .month{
+    font-size: 30px;
+    color:darkmagenta;
+}
+#result .day{
+    font-size: 30px;
+    color:Green;
+}
